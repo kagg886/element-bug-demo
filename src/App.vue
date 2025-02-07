@@ -1,15 +1,15 @@
 <template>
-<!--  <anim-router-view v-loading.fullscreen.lock="loading"/>-->
-<!--  <el-dialog :model-value="openErrorDialog"-->
-<!--             title="提示" width="30%"-->
-<!--             :close-on-click-modal="false"-->
-<!--             :show-close="false"-->
-<!--             :close-on-press-escape="false">-->
-<!--    <el-text>服务器连接失败</el-text>-->
-<!--    <template #footer>-->
-<!--      <el-button @click="retryPing">重试</el-button>-->
-<!--    </template>-->
-<!--  </el-dialog>-->
+  <anim-router-view v-loading.fullscreen.lock="loading"/>
+  <el-dialog :model-value="openErrorDialog"
+             title="提示" width="30%"
+             :close-on-click-modal="false"
+             :show-close="false"
+             :close-on-press-escape="false">
+    <el-text>服务器连接失败</el-text>
+    <template #footer>
+      <el-button @click="retryPing">重试</el-button>
+    </template>
+  </el-dialog>
 
   <anim-router-view/>
 </template>
