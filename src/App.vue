@@ -1,17 +1,24 @@
 <template>
-  <anim-router-view v-loading.fullscreen.lock="loading"/>
-  <el-dialog :model-value="openErrorDialog"
-             title="提示" width="30%"
-             :close-on-click-modal="false"
-             :show-close="false"
-             :close-on-press-escape="false">
-    <el-text>服务器连接失败</el-text>
-    <template #footer>
-      <el-button @click="retryPing">重试</el-button>
-    </template>
-  </el-dialog>
 
+<!--  if we do this, the custom styles display success-->
   <anim-router-view/>
+
+<!--  But this is won't work-->
+<!--  <anim-router-view v-loading.fullscreen.lock="loading"/>-->
+<!--  <el-dialog :model-value="openErrorDialog"-->
+<!--             title="提示" width="30%"-->
+<!--             :close-on-click-modal="false"-->
+<!--             :show-close="false"-->
+<!--             :close-on-press-escape="false">-->
+<!--    <el-text>服务器连接失败</el-text>-->
+<!--    <template #footer>-->
+<!--      <el-button @click="retryPing">重试</el-button>-->
+<!--    </template>-->
+<!--  </el-dialog>-->
+
+<!--it don't work too-->
+<!--  <anim-router-view v-loading.fullscreen.lock="loading"/>-->
+
 </template>
 
 <script setup lang="ts">
