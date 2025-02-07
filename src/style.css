@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    background: linear-gradient(138deg, #d4ddfc,#edefee);
+}
+
+ol, ul, menu {
+    list-style: initial;
+    margin: 0;
+    padding: 0;
+}
+
+.el-tag {
+    border-radius: 50px !important;
+    box-shadow: inset -10px 0 15px -3px rgba(0,0,0,0.1),-6px 0 13px 0 rgba(0,0,0,0.1);
+}
+.el-tag__content {
+    padding: 12px!important;
+}
